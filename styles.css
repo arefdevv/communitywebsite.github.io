@@ -275,6 +275,28 @@ hr {
     margin: 20px;
 }
 
+.fb-icon{
+    margin-top: 20px;
+    display: inline-block;
+    animation: float 5s ease-in-out infinite;
+}
+
+.fa-brands{
+    animation-delay: 1s;
+}
+
+@keyframes float {
+    0%{
+        transform: translateY(0);
+    }
+    50%{
+        transform: translateY(-15px);
+    }
+    100%{
+        transform: translateY(0);
+    }
+}
+
 /* for smart phones */
 
 @media screen and (max-width: 767px) {
