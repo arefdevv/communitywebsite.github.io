@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/637bf1fd0a.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="./contact-us.css">
+    <script src="./contact.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"></script>
+    <script type="text/javascript">
+        (function () {
+            emailjs.init("GdOVDS0xw8ke9w8SH");
+        })();
+    </script>
+    <title>Samen Al Hojaj | Contact Us</title>
+</head>
+<body>
+    <header class="header">
+        <div class="logo">
+            <a href="./index.html">
+                <img class="logo-img" src="./logo.png" alt="">
+            </a>
+        </div>
+    
+        <div class="navigation">
+    
+            <input type="checkbox" class="toggle-menu">
+            <div class="hamburger">
+    
+            </div>
+    
+            <ul class="menu">
+                <li><a href="./index.html">Home</a></li>
+                <li><a href="./index.html#about-us">About</a></li>
+                <li><a href="./index.html#gallery">Gallery</a></li>
+                <li><a href="./highAchievers.html">High Achievers</a></li>
+                <li><a href="./team.html">The Team</a></li>
+                <li><a href="./contact-us.html">Contact Us</a></li>
+            </ul>
+        </div>
+    </header>
+
+
+
+
+
+    <section class="contact">
+        <div class="content">
+            <h2 class="main-header">Contact Us</h2>
+            <p class="main-para">If you have any inquiries, please Email us and we will get back to you within 24 hours, alternatively you can call one of the numbers below.</p>
+        </div>
+        <div class="container">
+            <div class="contact">
+                <div class="contact-info">
+                    <div class="box">
+                        <div class="icon">
+                            <i class="fa-solid fa-map-location-dot"></i>
+                            <div class="text">
+                                <h3>Address</h3>
+                                <p>98 Wurundjeri Bvd Berwick VIC 3806</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="box">
+                        <div class="icon">
+                            <i class="fa-solid fa-envelope"></i>
+                            <div class="text">
+                                <h3>Email</h3>
+                                <p>Samen.alhojaj2018@gmail.com</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="box">
+                        <div class="icon">
+                            <i class="fa-solid fa-phone"></i>
+                            <div class="text">
+                                <h3>Phone</h3>
+                                <p class="phone-number">0431 010 040 || 0449 184 030 </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <form id="contact__form" onsubmit="contact(event)">
+        <div class="form__item">
+            <label class="form__item--label"></label>
+            <input class="input" name="user_name" type="text" required="required" placeholder="Name"></input>
+        </div>
+        <div class="form__item">
+            <label class="form__item--label"></label>
+            <input class="input" name="user_email" type="email" required="required" placeholder="Email"></input>
+        </div>
+        <div class="form__item">
+            <label class="form__item--label"></label>
+            <textarea class="input" name="message" type="text" required="required" placeholder="Your Message"></textarea>
+        </div>
+        <button onclick="showText()" id="contac__submit" class="form__submit">
+            Send Message
+        </button>
+    </form>
+
+
+    <div class="footer">
+        <p>Copyright © Samen Al Hojaj 2018</p>
+        <a href="https://www.facebook.com/Samen.Alhojaj2018/" target="_blank">
+            <i class="fa-brands fa-facebook-square"></i>
+        </a>
+        
+    </div>
+
+
+</body>
+</html>
